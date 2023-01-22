@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Encriptador de Mensajes</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="https://i.ibb.co/N9J47Lc/favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <span>🔑 Encriptador de mensajes 🔐</span>
+    </header>
+    <main>
+        <section class="encrypt-section">
+            <div class="vertical-ubication">
+                <div class="horizontal-message">
+                    <textarea class="message-encrypter" spellcheck="false"
+                        placeholder="Ingresa tu mensaje aquí"></textarea>
+                    <a><img class="delete-icon" src="img/delete_icon.png" alt="Icono de borrado"></a>
+                </div>
+                <div class="horizontal-ubication">
+                    <img class="information-icon" src="img/information_icon.png" alt="Icono de información">
+                    <p class="instructions-message">Solo letras minúsculas y sin acentos</p>
+
+                </div>
+                <div class="buttons_container">
+                    <input class="encrypt-button" type="submit" value="Encriptar">
+                    <input class="decrypt-button" type="submit" value="Desencriptar">
+                </div>
+            </div>
+
+        </section>
+        <section class="decrypt-section">
+            <div class="central-panel">
+                
+                <h3 class="title-result">Ningún mensaje fue encontrado</h3>
+                <p class="information-result">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+        </section>
+        <section class="result-section">
+            <div class="central-panel">
+                <p class="result-text"></p>
+                <input class="copy-button" type="submit" value="Copiar">
+            </div>
+        </section>
+        <section class="modal">
+            <div class="modal-container">
+                <img class="modal-img">
+                <h2 class="modal-title"></h2>
+                <p class="modal-message"></p>
+                <button class="modal-close">Aceptar</button>
+            </div>
+        </section>
+
+
+
+
+    </main>
+    <footer>
+        <h1 class="copyright_text"></h1>
+    </footer>
+    <script src="js/message_encrypter.js">
+    </script>
+</body>
+
+</html>
